@@ -7,9 +7,9 @@ function formatString(input: string, toUpper?: boolean) {
             return lowerText
       }
 };
-formatString("Hello")
-formatString("Hello", true)
-formatString("Hello", false)
+formatString("Hello World")
+formatString("Development", true)
+formatString("Programming", false)
 
 
 
@@ -59,12 +59,12 @@ myCar.getModel();
 
 function processValue(value: string | number): number {
       if (typeof value === "number") {
-            return value * value
+            return value * 2
       } else {
             return value.length
       }
 };
-processValue("hello")
+processValue("hello world")
 processValue(10)
 
 
@@ -101,11 +101,11 @@ enum Day {
 }
 
 function getDayType(day: Day): string {
-      if (day === 6) return 'Weekend';
+      if (day === 5 || day === 6) return 'Weekend';
       return 'Weekday';
 };
 getDayType(Day.Friday)
-getDayType(Day.Sunday)
+getDayType(Day.Saturday)
 
 
 
