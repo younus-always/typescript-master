@@ -78,9 +78,9 @@ type ID = string | number;
 
 let userId: ID;
 
-userId = "abc123"; // ✅ valid
-userId = 101;      // ✅ valid
-userId = true;     // ❌ Error: boolean is not allowed
+userId = "abc123"; // valid
+userId = 101;      // valid
+userId = true;     // Error: boolean is not allowed
 ```
 
 #### An **intersection** type combines multiple types into one. You use the `&` symbol.
